@@ -145,3 +145,35 @@ nav ul li a:hover {
 .page-hero img {
    max-width: 100%;
 }
+
+/* BLOCKQUOTE */
+section#quote {
+   padding-block: 5rem;
+   padding-inline: 9rem;
+}
+
+blockquote {
+   position: relative;
+   font-family: 'OT Miniature';
+   font-size: 2.5rem;
+   letter-spacing: 0.02em;
+   max-width: 65%;
+}
+
+blockquote::after {
+   position: absolute;
+   content: "“";
+   top: -1.2rem;
+   left: -3rem;
+   font-size: 20rem;
+   line-height: 15rem;
+   pointer-events: none;
+   color: var(--secondary-color);
+   opacity: 0.15;
+   z-index: -1;
+}
+
+blockquote p {
+   padding-top: 1rem;
+   text-align: right;
+}
