@@ -398,3 +398,22 @@ section#kelowna aside img:nth-of-type(2) {
 section#kelowna aside img:nth-of-type(3) {
    width: 75%;
 }
+
+/* FOOTER */
+footer {
+   display: flex;
+   justify-content: space-between;
+   margin-block: 20px;
+   font-family: 'OT Jubilee Silver';
+   font-size: 13px;
+}
+
+footer .social-list {
+   display: flex;
+   gap: 10px;
+}
+
+footer .social-list img {
+   width: 18px;
+   border-radius: 0;
+}
