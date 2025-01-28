@@ -355,3 +355,46 @@ section#rome aside section img {
 section.travel-content.rome p {
    flex: 0 0 calc(33.333% - 50px);
 }
+
+
+/* KELOWNA TRAVEL */
+section#kelowna {
+   display: flex;
+   gap: 20px;
+   padding-top: 5rem;
+}
+
+section#kelowna article {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   width: calc(55% - 10px);
+}
+
+section#kelowna article h2 {
+   order: 1;
+}
+
+section#kelowna article h3 {
+   max-width: 80%;
+}
+
+section#kelowna aside {
+   width: calc(45% - 10px);
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: flex-end;
+   gap: 20px;
+}
+
+section#kelowna aside img:nth-of-type(1) {
+   width: calc(60% - 10px);
+}
+
+section#kelowna aside img:nth-of-type(2) {
+   width: calc(40% - 10px);
+}
+
+section#kelowna aside img:nth-of-type(3) {
+   width: 75%;
+}
