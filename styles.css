@@ -297,3 +297,61 @@ section.travel-content img {
    flex: 1;
    width: 100%;
 }
+
+/* ROME TRAVEL */
+section#rome {
+   display: flex;
+   gap: 20px;
+   padding-top: 5rem;
+}
+
+section#rome article {
+   width: calc(45% - 10px);
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: flex-end;
+   gap: 4rem;
+}
+
+section#rome article h2 {
+   align-items: flex-start;
+}
+
+section#rome aside {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
+   width: calc(55% - 10px);
+   max-height: 820px;
+}
+
+section#rome aside>img {
+   width: 100%;
+   height: auto;
+   max-height: 310px;
+}
+
+section#rome aside>img:nth-of-type(1) {
+   flex: 1 1 calc(60% - 10px);
+   width: calc(60% - 10px);
+   max-height: 488px;
+}
+
+section#rome aside section {
+   display: flex;
+   flex-direction: column;
+   flex: 1 1 calc(40% - 10px);
+   gap: 20px;
+   width: calc(40% - 10px);
+   max-width: 288px;
+}
+
+section#rome aside section img {
+   flex: 1;
+   height: auto;
+}
+
+section.travel-content.rome p {
+   flex: 0 0 calc(33.333% - 50px);
+}
