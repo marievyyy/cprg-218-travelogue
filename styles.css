@@ -1,0 +1,100 @@
+@font-face {
+   font-family: 'OT Miniature';
+   src: url('./fonts/OTMiniature-Regular.woff2') format('woff2'),
+      url('./fonts/OTMiniature-Regular.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: 'OT Miniature';
+   src: url('./fonts/OTMiniature-Bold.woff2') format('woff2'),
+      url('./fonts/OTMiniature-Bold.woff') format('woff');
+   font-weight: bold;
+   font-style: normal;
+   font-display: swap;
+}
+
+
+@font-face {
+   font-family: 'OT Jubilee Diamond';
+   src: url('./fonts/OTJubilee-Diamond.woff2') format('woff2'),
+      url('./fonts/OTJubilee-Diamond.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: 'OT Jubilee Silver';
+   src: url('./fonts/OTJubilee-Silver.woff2') format('woff2'),
+      url('./fonts/OTJubilee-Silver.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+   font-display: swap;
+}
+
+:root {
+   --primary-color: #254336;
+   --secondary-color: #DE8F5F;
+   --background-color: #EFE4C6;
+   --text-color: #627361;
+}
+
+* {
+   margin: 0;
+   box-sizing: border-box;
+   font-size: 16px;
+   color: var(--text-color);
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+
+body {
+   background-color: var(--background-color);
+   margin: 0 50px;
+}
+
+/* header */
+header {
+   position: relative;
+   display: flex;
+   align-items: center;
+   padding: 50px 0 20px;
+   z-index: 1;
+}
+
+a.logo {
+   display: flex;
+   flex: 0 0 250px;
+   width: auto;
+}
+
+nav {
+   flex: 1 0 auto;
+}
+
+nav ul {
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+   list-style: none;
+}
+
+nav ul li a {
+   font-family: 'OT Jubilee Silver';
+   text-transform: uppercase;
+   font-size: 1.1rem;
+   text-decoration: none;
+   padding-inline: 1rem;
+   color: var(--text-color);
+   transition: color 0.3s ease-in;
+}
+
+nav ul li a:hover {
+   color: var(--secondary-color);
+}
