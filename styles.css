@@ -71,6 +71,54 @@ h1 {
    line-height: 0.73;
 }
 
+h2 {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+}
+
+h2 span.title {
+   color: var(--primary-color);
+   font-family: "OT Miniature";
+   font-size: 10rem;
+   font-weight: normal;
+   text-transform: uppercase;
+   line-height: 0.73;
+   letter-spacing: 0.01em;
+}
+
+span.small-font {
+   display: block;
+   color: var(--secondary-color);
+   font-family: "OT Jubilee Diamond";
+   font-size: 1.5rem;
+}
+
+h2 span.title-country {
+   color: var(--secondary-color);
+   font-family: "OT Jubilee Diamond";
+   font-weight: normal;
+   font-size: 1.5rem;
+   text-transform: uppercase;
+   letter-spacing: 0.01em;
+   border: 1px solid var(--secondary-color);
+   padding: 0.5rem 1rem;
+   border-radius: 30px;
+   margin-top: 1rem;
+}
+
+h3 {
+   font-family: 'OT Miniature';
+   font-size: 2rem;
+   font-weight: normal;
+   letter-spacing: 0.02em;
+}
+
+span.span-block {
+   display: block;
+   margin-top: 1rem;
+}
+
 img {
    object-fit: cover;
    border-radius: 50px;
@@ -176,4 +224,76 @@ blockquote::after {
 blockquote p {
    padding-top: 1rem;
    text-align: right;
+}
+
+/* PARIS TRAVEL */
+section#paris {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
+   padding-top: 10rem;
+}
+
+section#paris img {
+   border-radius: 45px;
+}
+
+section#paris img.paris-img--1 {
+   order: 1;
+   width: 28%;
+}
+
+section#paris img.paris-img--2 {
+   order: 2;
+   width: 18%;
+}
+
+section#paris h2 {
+   order: 3;
+   width: 50%;
+   margin-left: auto;
+   align-self: flex-end;
+}
+
+section#paris img.paris-img--3 {
+   order: 4;
+   width: 18%;
+}
+
+section#paris img.paris-img--4 {
+   order: 5;
+   width: 28%;
+}
+
+section#paris h3 {
+   order: 6;
+   align-self: flex-end;
+   width: 50%;
+   text-align: right;
+   margin-left: auto;
+   max-width: 570px;
+}
+
+/* TRAVEL CONTENT */
+section.travel-content {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 50px;
+   padding-block: 5rem;
+}
+
+section.travel-content p:not(span) {
+   flex: 1;
+   font-family: 'OT Jubilee Silver';
+   font-weight: normal;
+   line-height: 1.7rem;
+}
+
+section.travel-content p span {
+   margin-bottom: 1rem;
+}
+
+section.travel-content img {
+   flex: 1;
+   width: 100%;
 }
